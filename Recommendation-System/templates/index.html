@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Recommendation System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎬 Movie Recommendation System</h1>
+
+        <p class="subtitle">
+
+            Select your favourite movie genre and get recommendations.
+
+        </p>
+
+        <div class="recommend-box">
+
+            <label>Select Genre</label>
+
+            <select id="genre">
+
+                <option value="">Choose Genre</option>
+
+                <option value="Action">Action</option>
+
+                <option value="Comedy">Comedy</option>
+
+                <option value="Horror">Horror</option>
+
+                <option value="Romance">Romance</option>
+
+                <option value="Sci-Fi">Sci-Fi</option>
+
+                <option value="Animation">Animation</option>
+
+            </select>
+
+            <button id="recommendBtn">
+
+                Get Recommendations
+
+            </button>
+
+        </div>
+
+        <div class="result">
+
+            <h2>Recommended Movies</h2>
+
+            <ul id="movieList">
+
+                <li>Select a genre and click the button.</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
